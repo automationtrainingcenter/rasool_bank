@@ -1,0 +1,233 @@
+TestNG
+Test Next Generation
+it is advanced to JUNIT with lot of inbuilt features
+In general JUNIT is used to conduct unit testing only
+but we can use TestNG to conduct unit, integeration as well as System
+testing.
+
+Features of TestNG
+1. it provides several inbuilt annotations to implement the framework
+2. @Test is the annotation which consider a Java method as a test case
+3. it has inbuilt reproting feature
+4. it has the capability to execute test cases as a suite (xml file)
+5. it has inbuilt capability for parallel testing
+6. it has inbuilt capability for data driven testing
+7. we can filter test cases for the execution from different class
+
+public class TestClass{
+	@BeforeMethod
+	public void launch(){ ... }
+	
+	@AfterMethod
+	public void close(){ ... }
+
+	@Test
+	public void test1(){ .... }
+	
+	@Test
+	public void test2(){ .... }
+
+}
+
+TestNG suite 
+it is an xml file
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "sutie1">
+  <test name = "test1">
+    <classes>
+	<class name = "packagename.classname">
+	  <methods>
+	     <include name = "name of method to include in execution/>
+	  </methods>
+	</class>
+    </classes>
+  </test>
+</suite>
+testng.xml or suite.xml contains only one <suite> tag
+inside <suite> tag we can have any number of <test> tags
+inside <test> tag we can have any number of <class> tags and these 
+are the classes which contains test cases i.e methods with @Test annotations
+inside the <class> tag <methods> tag is optional
+if we didn't add <methods> tag then suite file will execute all @test annotated 
+method of the class in <class> tag. If we want to execute only specific methods
+of in that class then we can add <methods> tag with <include> tag. 
+<include> tag contains method you want to execute
+
+TestNG annotation:
+Note: Every annotation in TestNG are java methods except one or two
+
+1. @Test: it represents one test case as java method
+2. @BeforeMethod: it will execute before executing every Test annotated method
+3. @AfterMethod: it will execute after executing every Test annotated method
+4. @BeforeClass: it will execute before executing first test annotated method in the class
+5. @AfterClass: it will execute after executing last test annoated method in the class
+6. @BeforeTest: it will execute before executing first test annotated method in the
+first class of test tag
+7. @AfterTest: it will execute after executing last test annotated method in the 
+last class of test tag
+8. @BeforeSuite: it will execute before exectuing first test annotated in the first
+class of the first test tag in suite tag
+9. @AfterSuite: it will execute after exectuing last test annotated in the last
+class of the last test tag in suite tag
+10. @Parameters: it is used to pass some parameters or values from suite.xml to your
+test class
+In suite we are going to use parameter tag with name and value attributes
+in test class in which method we want to use those values of xml parameters on 
+that method we will use @Parameters, this annotation accepts an array of 
+string arguments
+eg:
+in suite.xml
+<parameter name="para1" value = "1234"/>
+<parameter name="para2" value = "8765"/>
+
+in test class
+@Parameters({"para1", "para2"})
+public void useParameters(String arg1, String arg2){
+sysout(arg1); // 1234
+sysout(arg2); //8765
+}
+
+11. @DataProvider: it is used to perform data driven testing on any test case by
+taking test data from any excel file or a java class
+the method with @DataProvider annotation always return a 2D object array
+eg:
+	@DataProvider(name = "test data")
+	public Object[][] getData(){
+		Object[][] data = {{}};
+		return data;
+	}
+
+12 @Listeners: it is applied to a Java class which contains out test annotated methods
+and this is used to pass a class name which implements ITestListener, ISuiteListener interfaces
+
+
+
+Test annotation attributes or properties
+
+1. priority: it is used to prioritize the test cases or @Test methods
+priority = 0 will have highest priority, bigger the value lower the priority
+if we are not specifying priority then the default priority is 0
+if two test cases have same priority or 0 priority they will execute in alphabetical order
+
+2. enabled: it accepts a boolean value either true or false
+by default the value is true. if we set it false then that test case will not execute
+
+3. dependsOnMethods: it accepts an array of string arguments i.e. the method names
+if a test case depends on another test case status then we can use this attribute
+if dependent test cases were passed then it will execute this particular test or it will skip
+
+eg:
+	@Test(priority = 2, dependsOnMethods= {"test2"})
+	public void test1() {
+		System.out.println("\ttest case one");
+	}
+
+	@Test(priority = 1)
+	public void test2() {
+		System.out.println("\ttest case two");
+		Assert.assertTrue(false);
+	}
+	
+	@Test(priority = 0, enabled = false)
+	@Parameters({"input1", "input2"})
+	public void test3(String arg1, String arg2) {
+		System.out.println("input1 is "+arg1);
+		System.out.println("input2 is "+arg2);
+	}
+
+	Note: 
+	test3 won't run because enabled attribute value is false
+	test2 will fail due to the Assertion
+	test1 depends on test2 so test1 will not run, it will skip from the execution
+
+4. groups: it accepts an array string arguments with the names of groups
+it is used to group multiple test cases so that we can execute test cases in groups
+group names can be anything they are user defined
+eg:
+	@Test(priority = 2, groups = {"group1"})
+	public void test1() {
+		System.out.println("\ttest case one");
+	}
+
+	@Test(priority = 1,  groups = {"group1", "group2"})
+	public void test2() {
+		System.out.println("\ttest case two");
+		Assert.assertTrue(true);
+	}
+	
+	@Test(priority = 0,  groups = {"group1", "group3"})
+	@Parameters({"input1", "input2"})
+	public void test3(String arg1, String arg2) {
+		System.out.println("input1 is "+arg1);
+		System.out.println("input2 is "+arg2);
+	}
+	
+	@Test(priority = 3,  groups = {"group1", "group2"})
+	public void test4() {
+		System.out.println("\ttest case four");
+	}
+
+	@Test(priority = 4, groups = {"group1", "group3"})
+	public void test5() {
+		System.out.println("\ttest case five");
+	}
+and In testng.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "suite1">
+	<test name = "test1">
+	<parameter name="input1" value="1234"/>
+	<parameter name="input2" value="8765"/>
+	<groups>
+		<run>
+			<include name = "group2"/>
+			<include name = "group3"/>
+		</run>
+	</groups>
+		<classes>
+			<class name = "in.srssprojects.keximbank.AppTest"/>
+		</classes>
+	</test>
+</suite>
+
+then it will executes test cases belongs to group2 and group3 based on priority
+groups attribute we have to use for @Before... and @After... annotations also
+
+5. dataProvider: it accepts a string value i.e. name of the @DataProvider annotation
+
+6. runAlways: it accepts a boolean value. If it is set to true this test case 
+will execute every time we execute the class
+eg:
+@Test(priority = 3, enabled = true, dependsOnMethods={"methodName"}, 
+	groups = {"valid", "branch", "datadriven"}, dataProvider="name of the dataprovider",
+	runAlways = true)
+public void branchCreationReset(){ .... }
+
+7. timeOut: it accepts a long value i.e. the maximum amount of time tese case can take to 
+complete the execution
+
+8. dataProviderClass: it takes class name which contains all the @DataProvider annotations
+
+eg:
+
+public class DPClass {
+	
+	@DataProvider(name = "data1")
+	public Object[][] getData() {
+		Object[][] data = { { 1, "surya", 8.7 }, { 2, "ravi", 8.9 }, { 3, "harish", 8.6 }, { 4, "satish", 7.9 } };
+		return data;
+	}
+
+}
+
+public class AppTest(){
+	@Test(priority = 5, dataProviderClass = DPClass.class, dataProvider = "data1")
+	public void test6(int id, String name, double percentage) {
+		System.out.println("test case 5");
+		System.out.println("id = " + id + "\tname = " + name + "\tpercentage = " + percentage);
+	}	
+}
+ 
+
+
