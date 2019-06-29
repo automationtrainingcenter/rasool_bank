@@ -1,73 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="24" total="34" passed="10">
+<testng-results skipped="0" failed="10" ignored="28" total="38" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="parallel suite" duration-ms="35936" started-at="2019-06-22T05:24:40Z" finished-at="2019-06-22T05:25:16Z">
+  <suite name="grid suite" duration-ms="23182" started-at="2019-06-29T04:14:09Z" finished-at="2019-06-29T04:14:32Z">
     <groups>
       <group name="cancel">
-        <method signature="TestExecution.branchCreationCancel()[pri:10, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="branchCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.employeeCreationCancel()[pri:15, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="employeeCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.roleCreationCancel()[pri:5, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="roleCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.branchCreationCancel()[pri:10, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="branchCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.employeeCreationCancel()[pri:15, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="employeeCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.roleCreationCancel()[pri:5, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="roleCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- cancel -->
       <group name="valid">
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- valid -->
+      <group name="data_driven">
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+      </group> <!-- data_driven -->
       <group name="role">
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.roleCreationCancel()[pri:5, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="roleCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.roleCreationReset()[pri:4, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="roleCreationReset" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.roleCreationCancel()[pri:5, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="roleCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.roleCreationReset()[pri:4, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="roleCreationReset" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- role -->
       <group name="blank">
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- blank -->
       <group name="reset">
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.branchCreationResetData()[pri:9, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="branchCreationResetData" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.employeeCreationWithRestData()[pri:14, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="employeeCreationWithRestData" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.roleCreationReset()[pri:4, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="roleCreationReset" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.branchCreationResetData()[pri:9, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="branchCreationResetData" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.employeeCreationWithRestData()[pri:14, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="employeeCreationWithRestData" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.roleCreationReset()[pri:4, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="roleCreationReset" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- reset -->
       <group name="duplicate">
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- duplicate -->
       <group name="employee">
-        <method signature="TestExecution.employeeCreationCancel()[pri:15, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="employeeCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.employeeCreationWithRestData()[pri:14, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="employeeCreationWithRestData" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.employeeCreationCancel()[pri:15, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="employeeCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.employeeCreationWithRestData()[pri:14, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="employeeCreationWithRestData" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- employee -->
       <group name="branch">
-        <method signature="TestExecution.branchCreationCancel()[pri:10, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="branchCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.branchCreationResetData()[pri:9, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="branchCreationResetData" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.branchCreationCancel()[pri:10, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="branchCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.branchCreationResetData()[pri:9, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="branchCreationResetData" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- branch -->
     </groups>
-    <test name="chrome test" duration-ms="29087" started-at="2019-06-22T05:24:40Z" finished-at="2019-06-22T05:25:09Z">
-      <class name="in.srssprojects.keximbank.ParameterExecution">
-        <test-method status="PASS" signature="lanch(java.lang.String, java.lang.String)[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="lanch" is-config="true" duration-ms="9584" started-at="2019-06-22T05:24:40Z" finished-at="2019-06-22T05:24:49Z">
+    <test name="node1 test" duration-ms="22843" started-at="2019-06-29T04:14:09Z" finished-at="2019-06-29T04:14:32Z">
+      <class name="in.srssprojects.keximbank.GridExecution">
+        <test-method status="PASS" signature="lanch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="lanch" is-config="true" duration-ms="7340" started-at="2019-06-29T04:14:09Z" finished-at="2019-06-29T04:14:16Z">
           <params>
             <param index="0">
               <value>
@@ -79,43 +85,222 @@
                 <![CDATA[http://srssprojects.in]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://192.168.43.155:35925/wd/hub]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanch -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="loginTest" duration-ms="4237" started-at="2019-06-22T05:24:49Z" finished-at="2019-06-22T05:24:54Z">
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="loginTest" duration-ms="15123" started-at="2019-06-29T04:14:16Z" finished-at="2019-06-29T04:14:32Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtuId"}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SURYAPC', ip: '192.168.43.155', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SURYAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 73ce8e73f78deb6e9926aae7eb8...}
+Session ID: 73ce8e73f78deb6e9926aae7eb8d1d92
+*** Element info: {Using=id, value=txtuId}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtuId"}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SURYAPC', ip: '192.168.43.155', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SURYAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 73ce8e73f78deb6e9926aae7eb8...}
+Session ID: 73ce8e73f78deb6e9926aae7eb8d1d92
+*** Element info: {Using=id, value=txtuId}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at in.srssprojects.keximbank.BankHomePage.username(BankHomePage.java:12)
+at in.srssprojects.keximbank.BankHomePage.fillUserName(BankHomePage.java:33)
+at in.srssprojects.keximbank.TestExecution.loginTest(TestExecution.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="roleCreationCancel()[pri:5, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="roleCreationCancel" duration-ms="3106" started-at="2019-06-22T05:24:54Z" finished-at="2019-06-22T05:24:57Z">
+        <test-method status="FAIL" signature="roleCreationCancel()[pri:5, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="roleCreationCancel" duration-ms="12" started-at="2019-06-29T04:14:32Z" finished-at="2019-06-29T04:14:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at in.srssprojects.keximbank.TestExecution.roleCreationCancel(TestExecution.java:85)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- roleCreationCancel -->
-        <test-method status="PASS" signature="branchCreationCancel()[pri:10, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="branchCreationCancel" duration-ms="2824" started-at="2019-06-22T05:24:57Z" finished-at="2019-06-22T05:24:59Z">
+        <test-method status="FAIL" signature="branchCreationCancel()[pri:10, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="branchCreationCancel" duration-ms="2" started-at="2019-06-29T04:14:32Z" finished-at="2019-06-29T04:14:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at in.srssprojects.keximbank.TestExecution.branchCreationCancel(TestExecution.java:154)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- branchCreationCancel -->
-        <test-method status="PASS" signature="employeeCreationCancel()[pri:15, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="employeeCreationCancel" duration-ms="6900" started-at="2019-06-22T05:24:59Z" finished-at="2019-06-22T05:25:06Z">
+        <test-method status="FAIL" signature="employeeCreationCancel()[pri:15, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="employeeCreationCancel" duration-ms="2" started-at="2019-06-29T04:14:32Z" finished-at="2019-06-29T04:14:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at in.srssprojects.keximbank.TestExecution.employeeCreationCancel(TestExecution.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- employeeCreationCancel -->
-        <test-method status="PASS" signature="logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="logout" duration-ms="2068" started-at="2019-06-22T05:25:06Z" finished-at="2019-06-22T05:25:08Z">
+        <test-method status="FAIL" signature="logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="logout" duration-ms="2" started-at="2019-06-29T04:14:32Z" finished-at="2019-06-29T04:14:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at in.srssprojects.keximbank.TestExecution.logout(TestExecution.java:249)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@61832929]" name="close" is-config="true" duration-ms="316" started-at="2019-06-22T05:25:08Z" finished-at="2019-06-22T05:25:09Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.GridExecution@91161c7]" name="close" is-config="true" duration-ms="312" started-at="2019-06-29T04:14:32Z" finished-at="2019-06-29T04:14:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- in.srssprojects.keximbank.ParameterExecution -->
-    </test> <!-- chrome test -->
-    <test name="firefox test" duration-ms="35936" started-at="2019-06-22T05:24:40Z" finished-at="2019-06-22T05:25:16Z">
-      <class name="in.srssprojects.keximbank.ParameterExecution">
-        <test-method status="PASS" signature="lanch(java.lang.String, java.lang.String)[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="lanch" is-config="true" duration-ms="14493" started-at="2019-06-22T05:24:40Z" finished-at="2019-06-22T05:24:54Z">
+      </class> <!-- in.srssprojects.keximbank.GridExecution -->
+    </test> <!-- node1 test -->
+    <test name="node2 test" duration-ms="23182" started-at="2019-06-29T04:14:09Z" finished-at="2019-06-29T04:14:32Z">
+      <class name="in.srssprojects.keximbank.GridExecution">
+        <test-method status="PASS" signature="lanch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="lanch" is-config="true" duration-ms="7448" started-at="2019-06-29T04:14:09Z" finished-at="2019-06-29T04:14:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
@@ -123,35 +308,220 @@
                 <![CDATA[http://srssprojects.in]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://192.168.43.200:43333/wd/hub]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanch -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="loginTest" duration-ms="2630" started-at="2019-06-22T05:24:54Z" finished-at="2019-06-22T05:24:57Z">
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="loginTest" duration-ms="15141" started-at="2019-06-29T04:14:17Z" finished-at="2019-06-29T04:14:32Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"txtuId"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SURYAPC', ip: '192.168.43.155', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49244}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true, webdriver.remote.sessionid: 51e8e82fd2afea9624866e62a8f...}
+Session ID: 51e8e82fd2afea9624866e62a8f95627
+*** Element info: {Using=id, value=txtuId}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"txtuId"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SURYAPC', ip: '192.168.43.155', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49244}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true, webdriver.remote.sessionid: 51e8e82fd2afea9624866e62a8f...}
+Session ID: 51e8e82fd2afea9624866e62a8f95627
+*** Element info: {Using=id, value=txtuId}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at in.srssprojects.keximbank.BankHomePage.username(BankHomePage.java:12)
+at in.srssprojects.keximbank.BankHomePage.fillUserName(BankHomePage.java:33)
+at in.srssprojects.keximbank.TestExecution.loginTest(TestExecution.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="roleCreationReset()[pri:4, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="roleCreationReset" duration-ms="3155" started-at="2019-06-22T05:24:57Z" finished-at="2019-06-22T05:25:00Z">
+        <test-method status="FAIL" signature="roleCreationReset()[pri:4, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="roleCreationReset" duration-ms="4" started-at="2019-06-29T04:14:32Z" finished-at="2019-06-29T04:14:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at in.srssprojects.keximbank.TestExecution.roleCreationReset(TestExecution.java:75)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- roleCreationReset -->
-        <test-method status="PASS" signature="branchCreationResetData()[pri:9, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="branchCreationResetData" duration-ms="4317" started-at="2019-06-22T05:25:00Z" finished-at="2019-06-22T05:25:04Z">
+        <test-method status="FAIL" signature="branchCreationResetData()[pri:9, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="branchCreationResetData" duration-ms="1" started-at="2019-06-29T04:14:32Z" finished-at="2019-06-29T04:14:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at in.srssprojects.keximbank.TestExecution.branchCreationResetData(TestExecution.java:139)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- branchCreationResetData -->
-        <test-method status="PASS" signature="employeeCreationWithRestData()[pri:14, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="employeeCreationWithRestData" duration-ms="8014" started-at="2019-06-22T05:25:04Z" finished-at="2019-06-22T05:25:12Z">
+        <test-method status="FAIL" signature="employeeCreationWithRestData()[pri:14, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="employeeCreationWithRestData" duration-ms="2" started-at="2019-06-29T04:14:32Z" finished-at="2019-06-29T04:14:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithRestData(TestExecution.java:204)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- employeeCreationWithRestData -->
-        <test-method status="PASS" signature="logout()[pri:16, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="logout" duration-ms="1236" started-at="2019-06-22T05:25:12Z" finished-at="2019-06-22T05:25:14Z">
+        <test-method status="FAIL" signature="logout()[pri:20, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="logout" duration-ms="2" started-at="2019-06-29T04:14:32Z" finished-at="2019-06-29T04:14:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at in.srssprojects.keximbank.TestExecution.logout(TestExecution.java:249)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.ParameterExecution@77cd7a0]" name="close" is-config="true" duration-ms="2058" started-at="2019-06-22T05:25:14Z" finished-at="2019-06-22T05:25:16Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.GridExecution@589838eb]" name="close" is-config="true" duration-ms="546" started-at="2019-06-29T04:14:32Z" finished-at="2019-06-29T04:14:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- in.srssprojects.keximbank.ParameterExecution -->
-    </test> <!-- firefox test -->
-  </suite> <!-- parallel suite -->
+      </class> <!-- in.srssprojects.keximbank.GridExecution -->
+    </test> <!-- node2 test -->
+  </suite> <!-- grid suite -->
 </testng-results>

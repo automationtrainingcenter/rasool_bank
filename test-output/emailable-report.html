@@ -8,23 +8,125 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">parallel suite</th></tr>
-<tr><td><a href="#t0">chrome test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">29,087</td><td>cancel</td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">firefox test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">35,936</td><td>reset</td><td></td></tr>
-<tr><th>Total</th><th class="num">10</th><th class="num">0</th><th class="num">0</th><th class="num">65,023</th><th colspan="2"></th></tr>
+<tr><th colspan="7">grid suite</th></tr>
+<tr><td><a href="#t0">node1 test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">22,843</td><td>cancel</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">node2 test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">23,182</td><td>reset</td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">10</th><th class="num">46,025</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">parallel suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chrome test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">in.srssprojects.keximbank.ParameterExecution</td><td><a href="#m0">branchCreationCancel</a></td><td rowspan="1">1561181097171</td><td rowspan="1">2824</td></tr><tr class="passedeven"><td><a href="#m1">employeeCreationCancel</a></td><td rowspan="1">1561181099997</td><td rowspan="1">6900</td></tr><tr class="passedeven"><td><a href="#m2">loginTest</a></td><td rowspan="1">1561181089820</td><td rowspan="1">4237</td></tr><tr class="passedeven"><td><a href="#m3">logout</a></td><td rowspan="1">1561181106899</td><td rowspan="1">2068</td></tr><tr class="passedeven"><td><a href="#m4">roleCreationCancel</a></td><td rowspan="1">1561181094063</td><td rowspan="1">3106</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">firefox test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">in.srssprojects.keximbank.ParameterExecution</td><td><a href="#m5">branchCreationResetData</a></td><td rowspan="1">1561181100501</td><td rowspan="1">4317</td></tr><tr class="passedeven"><td><a href="#m6">employeeCreationWithRestData</a></td><td rowspan="1">1561181104820</td><td rowspan="1">8014</td></tr><tr class="passedeven"><td><a href="#m7">loginTest</a></td><td rowspan="1">1561181094710</td><td rowspan="1">2630</td></tr><tr class="passedeven"><td><a href="#m8">logout</a></td><td rowspan="1">1561181112839</td><td rowspan="1">1236</td></tr><tr class="passedeven"><td><a href="#m9">roleCreationReset</a></td><td rowspan="1">1561181097343</td><td rowspan="1">3155</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">grid suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">node1 test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">in.srssprojects.keximbank.GridExecution</td><td><a href="#m0">branchCreationCancel</a></td><td rowspan="1">1561781672053</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m1">employeeCreationCancel</a></td><td rowspan="1">1561781672057</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m2">loginTest</a></td><td rowspan="1">1561781656901</td><td rowspan="1">15123</td></tr><tr class="failedeven"><td><a href="#m3">logout</a></td><td rowspan="1">1561781672061</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m4">roleCreationCancel</a></td><td rowspan="1">1561781672037</td><td rowspan="1">12</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">node2 test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">in.srssprojects.keximbank.GridExecution</td><td><a href="#m5">branchCreationResetData</a></td><td rowspan="1">1561781672156</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m6">employeeCreationWithRestData</a></td><td rowspan="1">1561781672159</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m7">loginTest</a></td><td rowspan="1">1561781657000</td><td rowspan="1">15141</td></tr><tr class="failedeven"><td><a href="#m8">logout</a></td><td rowspan="1">1561781672164</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m9">roleCreationReset</a></td><td rowspan="1">1561781672146</td><td rowspan="1">4</td></tr></tbody>
 </table>
-<h2>chrome test</h2><h3 id="m0">in.srssprojects.keximbank.ParameterExecution#branchCreationCancel</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">in.srssprojects.keximbank.ParameterExecution#employeeCreationCancel</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">in.srssprojects.keximbank.ParameterExecution#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">in.srssprojects.keximbank.ParameterExecution#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">in.srssprojects.keximbank.ParameterExecution#roleCreationCancel</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>firefox test</h2><h3 id="m5">in.srssprojects.keximbank.ParameterExecution#branchCreationResetData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">in.srssprojects.keximbank.ParameterExecution#employeeCreationWithRestData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">in.srssprojects.keximbank.ParameterExecution#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">in.srssprojects.keximbank.ParameterExecution#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">in.srssprojects.keximbank.ParameterExecution#roleCreationReset</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>node1 test</h2><h3 id="m0">in.srssprojects.keximbank.GridExecution#branchCreationCancel</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at in.srssprojects.keximbank.TestExecution.branchCreationCancel(TestExecution.java:154)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">in.srssprojects.keximbank.GridExecution#employeeCreationCancel</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at in.srssprojects.keximbank.TestExecution.employeeCreationCancel(TestExecution.java:217)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">in.srssprojects.keximbank.GridExecution#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtuId&quot;}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SURYAPC&apos;, ip: &apos;192.168.43.155&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SURYAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 73ce8e73f78deb6e9926aae7eb8...}
+Session ID: 73ce8e73f78deb6e9926aae7eb8d1d92
+*** Element info: {Using=id, value=txtuId}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at in.srssprojects.keximbank.BankHomePage.username(BankHomePage.java:12)
+	at in.srssprojects.keximbank.BankHomePage.fillUserName(BankHomePage.java:33)
+	at in.srssprojects.keximbank.TestExecution.loginTest(TestExecution.java:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">in.srssprojects.keximbank.GridExecution#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at in.srssprojects.keximbank.TestExecution.logout(TestExecution.java:249)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">in.srssprojects.keximbank.GridExecution#roleCreationCancel</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at in.srssprojects.keximbank.TestExecution.roleCreationCancel(TestExecution.java:85)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>node2 test</h2><h3 id="m5">in.srssprojects.keximbank.GridExecution#branchCreationResetData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at in.srssprojects.keximbank.TestExecution.branchCreationResetData(TestExecution.java:139)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">in.srssprojects.keximbank.GridExecution#employeeCreationWithRestData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at in.srssprojects.keximbank.TestExecution.employeeCreationWithRestData(TestExecution.java:204)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">in.srssprojects.keximbank.GridExecution#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;txtuId&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SURYAPC&apos;, ip: &apos;192.168.43.155&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49244}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true, webdriver.remote.sessionid: 51e8e82fd2afea9624866e62a8f...}
+Session ID: 51e8e82fd2afea9624866e62a8f95627
+*** Element info: {Using=id, value=txtuId}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at in.srssprojects.keximbank.BankHomePage.username(BankHomePage.java:12)
+	at in.srssprojects.keximbank.BankHomePage.fillUserName(BankHomePage.java:33)
+	at in.srssprojects.keximbank.TestExecution.loginTest(TestExecution.java:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">in.srssprojects.keximbank.GridExecution#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at in.srssprojects.keximbank.TestExecution.logout(TestExecution.java:249)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">in.srssprojects.keximbank.GridExecution#roleCreationReset</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at in.srssprojects.keximbank.TestExecution.roleCreationReset(TestExecution.java:75)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

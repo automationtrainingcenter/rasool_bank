@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [parallel suite]" parallel="tests">
+  <parameter name="url" value="http://srssprojects.in"/>
+  <test thread-count="2" verbose="0" name="chrome test(failed)" parallel="tests">
+    <parameter name="brName" value="chrome"/>
+    <groups>
+      <run>
+        <include name="cancel"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="in.srssprojects.keximbank.ParameterExecution">
+        <methods>
+          <include name="loginTest"/>
+          <include name="roleCreationCancel"/>
+          <include name="close"/>
+          <include name="branchCreationCancel"/>
+          <include name="employeeCreationCancel"/>
+          <include name="logout"/>
+          <include name="lanch"/>
+        </methods>
+      </class> <!-- in.srssprojects.keximbank.ParameterExecution -->
+    </classes>
+  </test> <!-- chrome test(failed) -->
+  <test thread-count="2" verbose="0" name="firefox test(failed)" parallel="tests">
+    <parameter name="brName" value="firefox"/>
+    <groups>
+      <run>
+        <include name="reset"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="in.srssprojects.keximbank.ParameterExecution">
+        <methods>
+          <include name="branchCreationResetData"/>
+          <include name="loginTest"/>
+          <include name="roleCreationReset"/>
+          <include name="close"/>
+          <include name="employeeCreationWithRestData"/>
+          <include name="logout"/>
+          <include name="lanch"/>
+        </methods>
+      </class> <!-- in.srssprojects.keximbank.ParameterExecution -->
+    </classes>
+  </test> <!-- firefox test(failed) -->
+</suite> <!-- Failed suite [parallel suite] -->

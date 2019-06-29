@@ -1,8 +1,11 @@
 package in.srssprojects.keximbank;
 
+import javax.xml.crypto.Data;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import utilitiles.BrowserHelper;
@@ -20,7 +23,7 @@ public class TestExecution extends BrowserHelper {
 
 	Alert alert;
 
-	@Test(priority = 0,groups= {"employee", "duplicate", "branch", "role", "valid", "blank", "reset","cancel"})
+	@Test(priority = 0,groups= {"data_driven", "employee", "duplicate", "branch", "role", "valid", "blank", "reset","cancel"})
 	public void loginTest() {
 		bankHomePage.fillUserName("Admin");
 		bankHomePage.fillPassword("Admin");
@@ -217,8 +220,31 @@ public class TestExecution extends BrowserHelper {
 		Assert.assertTrue(employeeDetailsPage.isNewEmployeeDisplayed());
 
 	}
+	
+	@Test(priority = 16, groups= {"data_driven"}, dataProviderClass=DataProviders.class, dataProvider = "empData")
+	public void employeeCreationResetWithDP(String empName, String loginPass, String roleName, String branchName) {
+		employeeDetailsPage = adminHomePage.clickEmployees();
+		employeeCreationPage = employeeDetailsPage.clickNewEmployee();
+		employeeCreationPage.fillEmployerName(empName);
+		employeeCreationPage.fillLoginpassword(loginPass);
+		employeeCreationPage.selectRoleType(roleName);
+		employeeCreationPage.selectBranchType(branchName);
+		employeeCreationPage.clickReset();
+		Assert.assertTrue(employeeCreationPage.isEmployeeNameEmpty());
 
-	@Test(priority = 16, groups= {"employee", "duplicate", "branch", "role", "valid", "blank", "reset","cancel"})
+	}
+	
+	@Test(priority = 17, groups= {"data_driven"}, dataProviderClass=DataProviders.class, dataProvider = "roleData")
+	public void roleCreationResetWithDP(String roleName, String roleType) {
+		roleDetailsPage = adminHomePage.clickRoles();
+		roleCreationPage = roleDetailsPage.clickNewRole();
+		roleCreationPage.fillRoleName(roleName);
+		roleCreationPage.selectRoleType(roleType);
+		roleCreationPage.clickReset();
+		Assert.assertTrue(roleCreationPage.isRoleNameEmpty());
+	}
+
+	@Test(priority = 20, groups= {"data_driven", "employee", "duplicate", "branch", "role", "valid", "blank", "reset","cancel"})
 	public void logout() {
 		bankHomePage = adminHomePage.clickLogout();
 		Assert.assertTrue(bankHomePage.isLoginDisplayed());

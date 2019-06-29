@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [suite1]">
-  <parameter name="url" value="http://srssprojects.in"/>
   <test thread-count="5" name="test1(failed)">
-    <parameter name="brName" value="chrome"/>
     <groups>
       <run>
-        <include name="reset"/>
+        <include name="data_driven"/>
       </run>
     </groups>
     <classes>
-      <class name="in.srssprojects.keximbank.ParameterExecution">
+      <class name="in.srssprojects.keximbank.BasicExecution">
         <methods>
-          <include name="branchCreationResetData"/>
           <include name="loginTest"/>
-          <include name="roleCreationReset"/>
           <include name="close"/>
-          <include name="employeeCreationWithRestData"/>
+          <include name="employeeCreationResetWithDP" invocation-numbers="0 1 2 3 4"/>
+          <include name="roleCreationResetWithDP" invocation-numbers="0 1 2 3 4"/>
           <include name="logout"/>
           <include name="lanch"/>
         </methods>
-      </class> <!-- in.srssprojects.keximbank.ParameterExecution -->
+      </class> <!-- in.srssprojects.keximbank.BasicExecution -->
     </classes>
   </test> <!-- test1(failed) -->
 </suite> <!-- Failed suite [suite1] -->

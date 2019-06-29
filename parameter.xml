@@ -3,7 +3,7 @@
 <suite name="suite1">
 	<parameter name="url" value="http://srssprojects.in" />
 	<test name="test1">
-		<parameter name="brName" value="chrome" />
+		<parameter name="brName" value="firefox" />
 		<groups>
 			<run>
 				<include name="reset" />
